@@ -1,9 +1,5 @@
-require 'shoes'
+require 'gtk2'
 
-Shoes.app do
-  # Seu código para a interface gráfica vai aqui
-  # Por exemplo, adicionar um botão:
-  button "Clique-me" do
-    alert "Você clicou no botão!"
-  end
-end
+window = Gtk::Window.new
+window.title = "Minha Janela"
+window.show
